@@ -30,6 +30,13 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.normal,
           ),
         ),
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.white.withOpacity(.2),
+            ),
+          ),
+        ),
       ),
       home: const WelcomeScreen(),
     );
