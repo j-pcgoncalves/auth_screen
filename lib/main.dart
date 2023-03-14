@@ -75,6 +75,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 FittedBox(
                   child: Container(
+                    margin: const EdgeInsets.only(bottom: 25),
                     padding: const EdgeInsets.symmetric(
                       horizontal: 26,
                       vertical: 16,
