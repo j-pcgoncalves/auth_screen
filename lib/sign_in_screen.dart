@@ -40,6 +40,7 @@ class SignInScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const Spacer(),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 30),
                     child: Row(
@@ -79,48 +80,52 @@ class SignInScreen extends StatelessWidget {
                       ))
                     ],
                   ),
-                  Row(
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
+                  const Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          padding: const EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white.withOpacity(.5),
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.android,
                             color: Colors.white.withOpacity(.5),
                           ),
                         ),
-                        child: Icon(
-                          Icons.android,
-                          color: Colors.white.withOpacity(.5),
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
+                        const SizedBox(width: 20),
+                        Container(
+                          padding: const EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white.withOpacity(.5),
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.chat,
                             color: Colors.white.withOpacity(.5),
                           ),
                         ),
-                        child: Icon(
-                          Icons.chat,
-                          color: Colors.white.withOpacity(.5),
+                        const Spacer(),
+                        Container(
+                          padding: const EdgeInsets.all(16),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: kPrimaryColor,
+                          ),
+                          child: const Icon(
+                            Icons.arrow_forward,
+                            color: Colors.black,
+                          ),
                         ),
-                      ),
-                      const Spacer(),
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: kPrimaryColor,
-                        ),
-                        child: const Icon(
-                          Icons.arrow_forward,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   )
                 ],
               ),
